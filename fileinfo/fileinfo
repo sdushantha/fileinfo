@@ -4,7 +4,7 @@ import re
 import requests
 import sys
 import argparse
-
+import textwrap
 
 def valid_extension(html):
 	if "Extension Not Found" in html:
@@ -53,7 +53,7 @@ def main():
 
 	print("\033[1mFull form: \033[0m" + file_type)
 	print("\033[1m\nWhat is a " + extension.replace(".", "") + " file?\033[0m")
-	print(description)
+	print(textwrap.fill(description, 71))
 
 if __name__=="__main__":
 	main()
