@@ -1,7 +1,6 @@
 # fileinfo
 
 [![Version](https://img.shields.io/badge/release-v1.1.1-blue.svg)](https://pypi.org/project/file-info/)
-[![Downloads](https://pepy.tech/badge/file-info)](https://pepy.tech/project/file-info)
 
 > Get information on over 10,000 file extensions right from the terminal
 <p align="center">
