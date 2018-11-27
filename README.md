@@ -10,6 +10,18 @@
 
 ## 💾 Installation
 
+### Pip Install
+
+Global Install
+
+```pip3 install file-info```
+
+Local Install
+
+```pip3 install --user file-info```
+
+### Git Install
+
 ```bash
 # clone the repo
 $ git clone https://github.com/sdushantha/fileinfo.git
