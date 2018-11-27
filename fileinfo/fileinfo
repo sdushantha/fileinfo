@@ -1,0 +1,59 @@
+#!/usr/bin/env python3
+
+import re
+import requests
+import sys
+import argparse
+
+
+def valid_extension(html):
+	if "Extension Not Found" in html:
+		return False
+	else:
+		return True
+
+
+def get_file_type(html):
+	return re.findall('<span itemprop="name">(.*?)</span></h2>', html)[0]
+
+
+def get_description(html):
+	messy_description = re.findall('<span itemprop="description">(.*?)</span>', html)[0]
+	
+	# https://tutorialedge.net/python/removing-html-from-string/
+	# This removes all of the HTML tags in the description
+	# It also removes all of the double spaces and replacs it with single spaces.
+	return re.compile(r'<[^>]+>').sub('', messy_description).replace("  ", " ")
+
+
+def main():
+
+	parser = argparse.ArgumentParser(description = "Get information on over 10,000 file extensions right from the terminal")
+	
+	parser.add_argument('extension', action="store", help="File extention")
+
+	args = parser.parse_args()
+	
+	# Using the split function lets the user give a file as
+	# an argument or a file extension with or without the dot (.)
+	# Example: script.py OR .py OR py
+	extension = args.extension.split(".")[-1]
+
+	url = "https://fileinfo.com/extension/{}".format(extension.replace(".", ""))
+
+	r = requests.get(url)
+	html = r.text
+
+	if not valid_extension(html):
+		print("Extension Not Found!")
+		sys.exit()
+	
+	file_type = get_file_type(html)
+	description = get_description(html)
+
+	print("\033[1mFull form: \033[0m" + file_type)
+	print("\033[1m\nWhat is a " + extension.replace(".", "") + " file?\033[0m")
+	print(description)
+
+if __name__=="__main__":
+	main()
