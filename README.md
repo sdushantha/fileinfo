@@ -33,6 +33,25 @@ $ pip3 install -r requirements.txt
 ```
 
 
+## 🔨 Usage
+
+```
+usage: fileinfo [-h] extension
+```
+
+```bash
+# Just the extension name
+$ fileinfo py
+
+# Extension name with dot (.)
+$ fileinfo .py
+
+# You can also give a file name
+$ fileinfo script.py
+```
+
+
+
 ## 📜 License
 MIT License
 
