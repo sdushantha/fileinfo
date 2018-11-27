@@ -37,6 +37,7 @@ $ pip3 install -r requirements.txt
 
 ## 🔨 Usage
 
+**Note:** An internet connection is required
 ```
 usage: fileinfo [-h] extension
 ```
