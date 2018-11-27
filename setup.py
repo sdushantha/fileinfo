@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
   name='file-info',
-  version='1.0',
+  version='1.1.1',
   author='Siddharth Dushantha',
   author_email='siddharth.dushantha@gmail.com',
   description='Get information on over 10,000 file extensions right from the terminal',
