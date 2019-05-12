@@ -10,7 +10,7 @@
 </p>
 
 
-## 💾 Installation
+## Installation
 
 ### Pip Install
 
@@ -35,7 +35,7 @@ $ pip3 install -r requirements.txt
 ```
 
 
-## 🔨 Usage
+## Usage
 
 **Note:** An internet connection is required
 ```
@@ -55,7 +55,7 @@ $ fileinfo script.py
 
 
 
-## 📜 License
+## License
 MIT License
 
-Copyright (c) 2018 Siddharth Dushantha
+Copyright (c) 2019 Siddharth Dushantha
