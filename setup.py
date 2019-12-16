@@ -11,7 +11,7 @@ setuptools.setup(
   description='Get information on over 10,000 file extensions right from the terminal',
   long_description=long_description,
   long_description_content_type='text/markdown',
-  url='http://https://github.com/sdushantha/fileinfo',
+  url='https://github.com/sdushantha/fileinfo',
   packages=setuptools.find_packages(),
   scripts=['fileinfo/fileinfo'],
   install_requires=['requests']
