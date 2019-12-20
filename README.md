@@ -1,7 +1,7 @@
 
 <h1 align="center">fileinfo</h1>
 <p align="center">
-<img src="https://user-images.githubusercontent.com/27065646/71261631-22fa6080-233e-11ea-9039-93f68c494ab8.gif">
+<img src="https://user-images.githubusercontent.com/27065646/71262345-c26c2300-233f-11ea-8548-222879fdcca1.gif">
 </p>
 
 ## Installation
