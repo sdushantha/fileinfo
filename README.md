@@ -13,14 +13,9 @@
 ## Installation
 
 ### Pip Install
-
-Global Install
-
-```pip3 install file-info```
-
-Local Install
-
-```pip3 install --user file-info```
+```
+pip3 install --user file-info
+```
 
 ### Git Install
 
