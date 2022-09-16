@@ -15,11 +15,11 @@ def valid_extension(html):
 
 
 def get_file_type(html):
-    return re.findall('<span itemprop="name">(.*?)</span></h2>', html)[0]
+    return re.findall('<h2 class="title">(.*?)</h2>', html)[0]
 
 
 def get_description(html):
-    messy_description = re.findall('<span itemprop="description">(.*?)</span>', html)[0]
+    messy_description = re.findall('<div class="infoBox">\n<p>(.*?)</p>\n</div>', html)[0]
 
     # https://tutorialedge.net/python/removing-html-from-string/
     # This removes all of the HTML tags in the description
